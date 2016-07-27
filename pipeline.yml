@@ -1,4 +1,4 @@
-ources:
+resources:
 - name: flight-school
   type: git
   source:
