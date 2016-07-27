@@ -1,0 +1,13 @@
+ources:
+- name: flight-school
+  type: git
+  source:
+    uri: https://github.com/ttreuthardt/flight-school
+    branch: master
+
+jobs:
+- name: test-app
+  plan:
+  - get: flight-school
+  - task: tests
+    file: flight-school/build.yml
